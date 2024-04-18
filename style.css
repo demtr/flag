@@ -1,0 +1,182 @@
+:root {
+  font-family: sans-serif;
+  --red-color: #C8102E;
+}
+h1 {
+  font-size: 64px;
+  text-align: center;
+  color: red;
+  background: url(./globe.jpeg) repeat-x #fc0;
+}
+h2 {
+  font-size: 180%;
+}
+select {
+  font-size: 120%;
+}
+.choose-country {
+    margin: 30px auto 40px;
+    width: 600px;
+}
+.Russia, .FR, .NL, .IT, .BEL, .DE, .PL, .Aus, .JP {
+    width: 600px;
+    height: 400px;
+    background-color: #eee;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.FR, .NL, .BEL, .IT, .DE, .PL, .Aus, .JP {display: none;}
+
+.Russia .strip-white, .Russia .strip-blue, .Russia .strip-red,
+.NL .strip-white, .NL .strip-blue, .NL .strip-red,
+.DE .strip-black, .DE .strip-yellow, .DE .strip-red,
+.Aus .strip-white, .Aus .strip-red {
+    width: 100%;
+    height: 33.33%;
+}
+.PL .strip-white, .PL .strip-red {
+    width: 100%;
+    height: 50%;
+}
+.JP .strip-white {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.JP .strip-red {
+    position: relative;
+    border-radius:50%;
+    top:100px;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+.FR .strip-white, .FR .strip-blue, .FR .strip-red,
+.IT .strip-white, .IT .strip-green, .IT .strip-red,
+.BEL .strip-black, .BEL .strip-yellow, .BEL .strip-red {
+    width: 33.34%;
+    height: 100%;
+}
+.strip-white {
+    background-color: #fff;
+}
+.strip-blue {
+    background-color: #00f;
+}
+.strip-red {
+    background-color: #f00;
+}
+.strip-green {
+    background-color: #080;
+}
+.strip-black {
+    background-color: #000;
+}
+.strip-yellow {
+    background-color: yellow;
+}
+.USA {
+    display: none;
+    width: 760px;
+    height: 400px;
+    background-color: #eee;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+}
+.USA .strip-white, .USA .strip-red {
+    width: 100%;
+    height: 7.69%;
+}
+.sky {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #00008b;
+    width: 40%;
+    height: 53.85%;
+}
+.stars5, .stars6 {
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 30px;
+    line-height:90%;
+}
+.stars5 {
+    margin-left: 30px;
+}
+.stars6 {
+    margin-left: 12px;
+}
+.UK {
+  display: none;
+  background: #012169;
+  border: 1px solid black;
+  position: relative;
+  margin: 0 auto;
+  height: 360px;
+  width: 600px;
+  overflow: hidden;
+}
+.strip-d1, .strip-d2 {
+  position: relative;
+  top: 41.66%;
+  left:-10%;
+  background: white;
+  height: 16.6%;
+  width: 120%;
+  transform: rotate(31deg);
+}
+.strip-d2 {
+  top: 25%;
+  left: -10%;
+  transform: rotate(-31deg);
+}
+.strip-d1-l, .strip-d2-l {
+  position: relative;
+  top: 50%;
+  left: 0;
+  background: var(--red-color);
+  height: 35%;
+  width: 40%;
+}
+.strip-d1-r, .strip-d2-r {
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  background: var(--red-color);
+  height: 35%;
+  width: 40%;
+}
+.strip-h {
+  position: absolute;
+  background: white;
+  top: 35%;
+  height: 30%;
+  width: 100%;
+}
+.strip-h-r {
+  position: absolute;
+  background: var(--red-color);
+  top: 40%;
+  height: 20%;
+  width: 100%;
+}
+.strip-v {
+  position: absolute;
+  top: 0;
+  background: white;
+  margin-left: 41%;
+  height: 100%;
+  width: 18%;
+}
+.strip-v-r {
+  position: absolute;
+  top: 0;
+  background: var(--red-color);
+  left: 16.6%;
+  height: 100%;
+  width: 66.6%;
+}
