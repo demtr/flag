@@ -3,10 +3,12 @@
   --red-color: #C8102E;
 }
 h1 {
-  font-size: 64px;
-  text-align: center;
-  color: red;
   background: url(./globe.jpeg) repeat-x #fc0;
+  color: red;
+  font-size: 64px;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
 }
 h2 {
   font-size: 180%;
@@ -15,7 +17,7 @@ select {
   font-size: 120%;
 }
 .choose-country {
-    margin: 30px auto 40px;
+    margin: 0 auto 10px;
     width: 600px;
 }
 .Russia, .FR, .NL, .IT, .BEL, .DE, .PL, .Aus, .JP {
