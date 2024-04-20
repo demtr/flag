@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <script>
-    const allFlags = ["Russia", "USA", "UK", "FR", "NL", "DE", "BEL", "IT", "PL","Aus", "JP"]; // country classes
+    const allFlags = ["Russia", "USA", "UK", "FR", "NL", "DE", "BEL", "IT", "PL", "ALG", "Aus", 
+       "DN", "FIN", "SW", "SWS", "JP"]; // country classes
 
     function flag(cur) {
         for (let f of allFlags) { // select values
@@ -19,7 +20,7 @@
                     else
                        sel.style.display = 'block';
                 }
-                else
+                else if(sel.style.display != 'none')
                     sel.style.display = 'none';
             }
         }
@@ -40,6 +41,11 @@
         <option value="PL">Poland</option>
         <option value="BEL">Belgium</option>
         <option value="Aus">Austria</option>
+        <option value="ALG">Algeria</option>
+        <option value="DN">Denmark</option>
+        <option value="FIN">Finland</option>
+        <option value="SWS">Swiss</option>
+        <option value="SW">Sweden</option>
         <option value="JP">Japan</option>
     </select>
 </h2>
@@ -82,6 +88,35 @@
     <div class="strip-red"></div>
     <div class="strip-white"></div>
     <div class="strip-red"></div>
+</div>
+<div class="ALG">
+    <div class="strip-green"></div>
+    <div class="strip-white"></div>
+    <div class="crescent"></div>
+    <div class="star5"></div>
+</div>
+<div class="DN">
+    <div class="strip-red">
+    <div class="strip-white"></div>
+    <div class="strip-white"></div>
+    </div>
+</div>
+<div class="FIN">
+    <div class="strip-white">
+    <div class="strip-blue"></div>
+    <div class="strip-blue"></div>
+    </div>
+</div>
+<div class="SWS">
+    <div class="strip-red">
+    <div class="strip-white"></div>
+    <div class="strip-white"></div></div>
+</div>
+<div class="SW">
+    <div class="strip-blue">
+    <div class="strip-yellow"></div>
+    <div class="strip-yellow"></div>
+    </div>
 </div>
 <div class="JP">
     <div class="strip-white">
