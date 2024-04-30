@@ -1,0 +1,295 @@
+:root {
+  font-family: sans-serif;
+  --red-color: #C8102E;
+}
+body {
+  background: url(../img/flags.jpeg) repeat;
+}
+h1 {
+  background: url(../img/globe.jpeg) repeat-x #fc0;
+  border-radius: 20px 20px 0 0;
+  color: red;
+  font-size: 64px;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+h2 {
+  font-size: 180%;
+  padding: 8px 20px;
+}
+select {
+  font-size: 120%;
+}
+.choose-country {
+  background: white;
+  margin: 0 auto 10px;
+  width: 600px;
+}
+.Russia, .FR, .NL, .IT, .BEL, .DE, .PL, .Aus, .NO, .RO, .ALG, .DN, .FIN, .SW {
+  display: none;
+  height: 400px;
+  width: 600px;
+  background-color: #eee;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.Russia {display: block;}
+
+.Russia .strip-white, .Russia .strip-blue, .Russia .strip-red,
+.NL .strip-white, .NL .strip-blue, .NL .strip-red,
+.DE .strip-black, .DE .strip-yellow, .DE .strip-red,
+.Aus .strip-white, .Aus .strip-red {
+  width: 100%;
+  height: 33.33%;
+}
+.ALG .strip-green, .ALG .strip-white {
+  width: 50%;
+  height: 100%;
+}
+.ALG {
+  position: relative;
+}
+.ALG .strip-white {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+.ALG .crescent {
+  position: absolute;
+  top: 33%;
+  left: 43%;
+  width: 150px;
+  height: 150px;
+  margin: -20px 0 20px 0;
+  border-radius: 50%;
+  box-shadow: -19px 0px 0 16px #D21034;
+}
+.star5 {
+  top:30%;
+  left:49%;
+  margin: 50px 0; 
+  height: 0; 
+  width: 0;
+  position: absolute;
+  border-right: 50px solid transparent;
+  border-bottom: 35px solid #D21034;
+  border-left: 50px solid transparent;
+  transform: rotate(50deg);
+}
+.star5:before, 
+.star5:after {
+  content: "";
+  height: 0; 
+  width: 0;
+  position: absolute;
+}
+.star5:before {
+  top: -26px; 
+  left: -32px;
+  border-bottom: 40px solid #D21034;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  transform: rotate(-35deg);
+}
+.star5:after {
+  top: 2px; 
+  left: -53px;
+  border-right: 50px solid transparent;
+  border-bottom: 35px solid #D21034;
+  border-left: 50px solid transparent;
+  transform: rotate(-70deg);
+}
+.PL .strip-white, .PL .strip-red {
+    width: 100%;
+    height: 50%;
+}
+
+.SW .strip-blue {
+    background: #0080E6;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.SW .strip-yellow:first-child {
+    background: #FFCC00;
+    position: relative;
+    top: 40%;
+    width: 100%;
+    height: 20%;
+}
+.SW .strip-yellow:last-child {
+    background: #FFCC00;
+    position: relative;
+    left: 31.25%;
+    top: -20%;
+    width: 12.5%;
+    height: 100%;
+}
+.SWS {
+    width: 400px;
+    height: 400px;
+    background-color: #eee;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.SWS .strip-red {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.SWS .strip-white:first-child {
+    position: relative;
+    margin: 0 auto;
+    top: 18.75%; 
+    width: 18.75%;
+    height: 62.5%;
+}
+.SWS .strip-white:last-child {
+    position: absolute;
+    top: 40.625%;
+    left: 18.75%; 
+    width: 62.5%;
+    height: 18.75%;
+}
+.FIN .strip-white {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.FIN .strip-blue:first-child {
+    position: relative;
+    top: 36.36%;
+    width: 100%;
+    height: 27.27%;
+}
+.FIN .strip-blue:last-child {
+    position: absolute;
+    left: 27.77%;
+    top: 0;
+    width: 16.66%;
+    height: 100%;
+}
+.strip-white {
+    background-color: #fff;
+}
+.strip-blue {
+    background-color: #00f;
+}
+.strip-red {
+    background-color: #f00;
+}
+.strip-green {
+    background-color: #080;
+}
+.strip-black {
+    background-color: #000;
+}
+.strip-yellow {
+    background-color: yellow;
+}
+.USA {
+    display: none;
+    width: 760px;
+    height: 400px;
+    background-color: #eee;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+}
+.USA .strip-white, .USA .strip-red {
+    width: 100%;
+    height: 7.69%;
+}
+.sky {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #00008b;
+    width: 40%;
+    height: 53.85%;
+}
+.stars5, .stars6 {
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 30px;
+    line-height:90%;
+}
+.stars5 {
+    margin-left: 30px;
+}
+.stars6 {
+    margin-left: 12px;
+}
+.UK {
+  display: none;
+  background: #012169;
+  border: 1px solid black;
+  position: relative;
+  margin: 0 auto;
+  height: 360px;
+  width: 600px;
+  overflow: hidden;
+}
+.strip-d1, .strip-d2 {
+  position: relative;
+  top: 41.66%;
+  left:-10%;
+  background: white;
+  height: 16.6%;
+  width: 120%;
+  transform: rotate(31deg);
+}
+.strip-d2 {
+  top: 25%;
+  left: -10%;
+  transform: rotate(-31deg);
+}
+.strip-d1-l, .strip-d2-l {
+  position: relative;
+  top: 50%;
+  left: 0;
+  background: var(--red-color);
+  height: 35%;
+  width: 40%;
+}
+.strip-d1-r, .strip-d2-r {
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  background: var(--red-color);
+  height: 35%;
+  width: 40%;
+}
+.strip-h {
+  position: absolute;
+  background: white;
+  top: 35%;
+  height: 30%;
+  width: 100%;
+}
+.strip-h-r {
+  position: absolute;
+  background: var(--red-color);
+  top: 40%;
+  height: 20%;
+  width: 100%;
+}
+.strip-v {
+  position: absolute;
+  top: 0;
+  background: white;
+  margin-left: 41%;
+  height: 100%;
+  width: 18%;
+}
+.strip-v-r {
+  position: absolute;
+  top: 0;
+  background: var(--red-color);
+  left: 16.6%;
+  height: 100%;
+  width: 66.6%;
+}

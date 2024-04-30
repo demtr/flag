@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Flag CSS image</title>
-    <link rel="icon" type="image/gif" href="icon.gif">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/gif" href="img/icon.gif">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/europe.css">
+    <link rel="stylesheet" href="styles/asia.css">
 </head>
 <script>
-    const allFlags = ["Russia", "USA", "UK", "FR", "NL", "DE", "BEL", "IT", "PL", "ALG", "Aus", 
-       "DN", "FIN", "SW", "SWS", "JP"]; // country classes
+    const allFlags = ["Russia", "USA", "UK", "FR", "NL", "NO", "DE", "BEL", "IT", "PL", "RO", "ALG", "Aus",
+       "DN", "FIN", "SW", "SWS", "IL", "TR", "SY", "JP"]; // country classes
 
     function flag(cur) {
         for (let f of allFlags) { // select values
             const sel = document.querySelector("." + f)
             if (sel) {
                 if (cur.value == f) {
-                    if(['FR', 'IT', 'BEL'].includes(f))
+                    if(['FR', 'IT', 'BEL', 'RO'].includes(f))
                        sel.style.display = 'flex';
                     else
                        sel.style.display = 'block';
@@ -30,24 +32,34 @@
 <div class="choose-country">
 <h1>FLAGS OF THE WORLD</h1>
 <h2>Choose country: 
-    <select onchange="flag(this)">
-        <option value="Russia">Russia</option>
-        <option value="USA">USA</option>
-        <option value="UK">Unided Kingdom</option>
-        <option value="FR">France</option>
-        <option value="NL">Netherlands</option>
-        <option value="IT">Italy</option>
-        <option value="DE">Germany</option>
-        <option value="PL">Poland</option>
-        <option value="BEL">Belgium</option>
+   <select onchange="flag(this)">
+      <optgroup label="Europe">
         <option value="Aus">Austria</option>
-        <option value="ALG">Algeria</option>
+        <option value="BEL">Belgium</option>
         <option value="DN">Denmark</option>
         <option value="FIN">Finland</option>
+        <option value="FR">France</option>
+        <option value="DE">Germany</option>
+        <option value="IT">Italy</option>
+        <option value="NL">Netherlands</option>
+        <option value="NO">Norway</option>
+        <option value="PL">Poland</option>
+        <option value="RO">Romania</option>
+        <option value="Russia" selected>Russia</option>
         <option value="SWS">Swiss</option>
         <option value="SW">Sweden</option>
+        <option value="UK">Unided Kingdom</option>
+      </optgroup>
+      <optgroup label="Asia">
+
+        <option value="IL">Israel</option>
         <option value="JP">Japan</option>
-    </select>
+        <option value="SY">Syria</option>
+        <option value="TR">Turkey</option>
+      </optgroup>
+        <option value="ALG">Algeria</option>
+        <option value="USA">USA</option>
+   </select>
 </h2>
 </div>
 <div class="Russia">
@@ -75,6 +87,11 @@
     <div class="strip-red"></div>
     <div class="strip-yellow"></div>
 </div>
+<div class="RO">
+    <div class="strip-blue"></div>
+    <div class="strip-yellow"></div>
+    <div class="strip-red"></div>
+</div>
 <div class="PL">
     <div class="strip-white"></div>
     <div class="strip-red"></div>
@@ -101,6 +118,12 @@
     <div class="strip-white"></div>
     </div>
 </div>
+<div class="NO">
+    <div class="strip-white"></div>
+    <div class="strip-white last">
+    <div class="strip-blue"></div></div>
+    <div class="strip-blue"></div>
+</div>
 <div class="FIN">
     <div class="strip-white">
     <div class="strip-blue"></div>
@@ -117,6 +140,20 @@
     <div class="strip-yellow"></div>
     <div class="strip-yellow"></div>
     </div>
+</div>
+<div class="IL">
+    <div class="strip-white">
+    <div class="strip-blue"></div>
+    <div class="strip-blue"></div>
+    </div>
+</div>
+<div class="TR">
+    <div class="crescent"></div>
+</div>
+<div class="SY">
+    <div class="strip-red"></div>
+    <div class="strip-white"></div>
+    <div class="strip-black"></div>
 </div>
 <div class="JP">
     <div class="strip-white">

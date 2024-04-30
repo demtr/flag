@@ -1,0 +1,88 @@
+.FR .strip-white, .FR .strip-blue, .FR .strip-red,
+.IT .strip-white, .IT .strip-green, .IT .strip-red,
+.BEL .strip-black, .BEL .strip-yellow, .BEL .strip-red,
+.RO .strip-blue, .RO .strip-yellow, .RO .strip-red {
+    width: 33.34%;
+    height: 100%;
+}
+
+.FR, .NL, .NO, .BEL, .IT, .DE, .PL, .Aus, .DN, .FIN, .SW, .SWS {display: none;}
+
+.DN{ /* 28:37 */
+    height: 560px;
+    width: 740px;
+}
+.FIN { /* 11:18 */
+    height: 440px;
+    width: 720px;
+}
+.SW { /* 10:16 */
+    height: 400px;
+    width: 640px;
+}
+.NO { /* 8:11 Norway */
+    height: 400px;
+    width: 550px;
+}
+
+.DN .strip-red {
+    background: var(--red-color);
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.DN .strip-white:first-child {
+    position: relative;
+    top: 42.86%;
+    width: 100%;
+    height: 14.28%;
+}
+.DN .strip-white:last-child {
+    position: relative;
+    left: 31.25%;
+    top: -14.28%;
+    width: 10.81%;
+    height: 100%;
+}
+
+.NO {
+    background: var(--red-color);
+    position: relative;
+}
+.NO .strip-white:first-child {
+    position: relative;
+    top: 37.5%;
+    width: 100%;
+    height: 25%;
+}
+.NO .strip-white.last {
+    position: absolute;
+    left: 25%;
+    top: 0;
+    width: 18.18%;
+    height: 100%;
+}
+.NO .strip-white.last .strip-blue {
+    background: darkblue;
+    position: relative;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+}
+.NO > .strip-blue {
+    background: darkblue;
+    position: absolute;
+    left: 0;
+    top: 175px;
+    width: 100%;
+    height: 12.5%;
+}
+.RO .strip-blue {
+    background: #002B7F;
+}
+.RO .strip-yellow {
+    background: #FCD116;
+}
+.RO .strip-red {
+    background: #CE1126;
+}
