@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Flag CSS image</title>
+    <title>World flags</title>
     <link rel="icon" type="image/gif" href="img/icon.gif">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/europe.css">
+    <link rel="stylesheet" href="styles/africa.css">
     <link rel="stylesheet" href="styles/asia.css">
 </head>
 <script>
     const allFlags = ["Russia", "USA", "UK", "FR", "NL", "NO", "DE", "BEL", "IT", "PL", "RO", "ALG", "Aus",
-       "DN", "FIN", "SW", "SWS", "IL", "TR", "SY", "JP"]; // country classes
+       "DN", "FIN", "SW", "SWS", "IL", "TR", "SY", "JP", "CU", "GR"]; // country classes
 
     function flag(cur) {
         for (let f of allFlags) { // select values
@@ -40,6 +41,7 @@
         <option value="FIN">Finland</option>
         <option value="FR">France</option>
         <option value="DE">Germany</option>
+        <option value="GR">Greece</option>
         <option value="IT">Italy</option>
         <option value="NL">Netherlands</option>
         <option value="NO">Norway</option>
@@ -58,6 +60,7 @@
         <option value="TR">Turkey</option>
       </optgroup>
         <option value="ALG">Algeria</option>
+        <option value="CU">Cuba</option>
         <option value="USA">USA</option>
    </select>
 </h2>
@@ -66,6 +69,14 @@
     <div class="strip-white"></div>
     <div class="strip-blue"></div>
     <div class="strip-red"></div>
+</div>
+<div class="GR">
+    <div class="strip-blue"></div>
+    <div class="strip-blue"></div>
+    <div class="strip-blue"></div>
+    <div class="strip-blue"></div>
+    <div class="strip-blue"></div>
+    <div class="greek-cross"></div>
 </div>
 <div class="FR">
     <div class="strip-blue"></div>
@@ -159,6 +170,12 @@
     <div class="strip-white">
     <div class="strip-red"></div>
     </div>
+</div>
+<div class="CU">
+    <div class="strip-blue"></div>
+    <div class="strip-blue"></div>
+    <div class="strip-blue"></div>
+    <div class="strip-red"></div>
 </div>
 <div class="USA">
     <div class="sky">
