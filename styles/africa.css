@@ -1,0 +1,22 @@
+.ALG .strip-green, .ALG .strip-white {
+    width: 50%;
+    height: 100%;
+}
+.ALG {
+    position: relative;
+}
+.ALG .strip-white {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.ALG .crescent {
+    position: absolute;
+    top: 33%;
+    left: 43%;
+    width: 150px;
+    height: 150px;
+    margin: -20px 0 20px 0;
+    border-radius: 50%;
+    box-shadow: -19px 0px 0 16px #D21034;
+}
